@@ -7,3 +7,10 @@ CREATE USER IF NOT EXISTS 'computer_inventory_manager'@'localhost' IDENTIFIED BY
 GRANT ALL PRIVILEGES ON computer_inventory.* TO 'computer_inventory_manager'@'localhost';
 
 USE computer_inventory;
+
+SOURCE create-macOS-Versions-table.sql;
+SOURCE populate-macOS-Versions-table.sql;
+
+SOURCE create-macOS-releases-table.sql;
+SOURCE populate-macOS-releases-table.sql;
+
